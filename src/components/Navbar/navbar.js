@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
+import msgPicture from "../../bilder/msgPicture.png";
 
 const Navbar = () => {
   return (
@@ -12,8 +13,8 @@ const Navbar = () => {
         <Link className="desktopMenuListItem">Projects</Link>
       </div>
       <button className="desktopMenuBtn">
-        <img src="" alt="" className="desktopMenuImg" />
-        Ta kontakt
+        <img src={msgPicture} alt="" className="desktopMenuImg" />
+        Contact me
       </button>
     </nav>
   );
