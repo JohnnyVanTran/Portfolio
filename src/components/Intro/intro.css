@@ -6,20 +6,24 @@
     overflow: hidden;
     position: relative;
 }
-
+@font-face {
+    font-family: 'HandwrittenFont';
+    src: url('./../fonts/Handmade.otf') format('opentype');
+}
 .bg {
     position: absolute;
     object-fit: cover;
     border-radius: 4rem;
+    z-index: -1;
     top: 4rem;
     right: 0;
     max-width: 100%;
     width: 400px;
 }
-
 .introContent {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
+    overflow: hidden;
     padding-right: 1rem;
     font-size: 3rem;
     font-weight: 700;
@@ -27,17 +31,33 @@
     flex-direction: column;
     justify-content: center;
 }
-
+.a {
+    font-family: 'HandwrittenFont', sans-serif;
+}
 .hello1 {
-    font-size: 1.75rem;
+    font-family: 'HandwrittenFont', sans-serif;
+    font-size: 3rem;
     font-weight: 100;
 }
-
 .introName {
     color: lightblue;
 }
-
 .introPara {
-    font-size: medium;
+    font-size: 1.5rem;
     font-weight: 100;
+}
+.introJoke {
+    color: lightcoral;
+}
+
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw;
+    }
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
 }
